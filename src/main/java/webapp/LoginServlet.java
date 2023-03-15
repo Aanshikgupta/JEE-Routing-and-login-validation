@@ -63,7 +63,6 @@ public class LoginServlet extends HttpServlet {
             request.setAttribute("username",request.getParameter("username"));
             request.setAttribute("password",request.getParameter("password"));
             request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request,response);
-
         }else{
             request.getRequestDispatcher("/WEB-INF/views/error.jsp").forward(request, response);
         }
